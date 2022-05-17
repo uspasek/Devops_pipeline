@@ -2,4 +2,4 @@ FROM openjdk:16-jdk-alpine
 
 COPY app app
 
-RUN cd app && ./mvnw dependency:go-offline
+RUN cd app && chmod +x mvnw && ./mvnw dependency:go-offline
